@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: "FiraCode";
+  src: local("FiraCode"), url(./fonts/FiraCode/FiraCode-Regular.ttf) format("ttf");
+}
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+body {
+  background: #121319;
+}
