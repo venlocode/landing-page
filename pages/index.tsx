@@ -76,7 +76,7 @@ export default function IndexPage(){
         <meta property="og:title" content="Venlo" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://af7c-49-14-106-71.ngrok.io/" />
-        <meta property="og:image" itemProp="image" content="https://cdn.discordapp.com/attachments/615219601424252958/905035932225372270/unknown.png" />
+        <meta property="og:image" itemProp="image" content="/cover.jpg" />
 
         <meta property="og:description" content="Venlo tokenizes open-source work and creates dedicated marketplaces for it" />
         <meta property="og:locale" content="en-US" />
