@@ -56,7 +56,7 @@ function WaitlistForm() {
           disabled={clicked}
         />
         <button 
-          className={`text-secondary text-xl py-2.5 px-12 rounded ${disabled ? "bg-tertiary" : "bg-primary"}`}
+          className={`text-secondary text-lg py-2.5 px-12 duration-100 rounded ${disabled ? "bg-tertiary" : "bg-primary"}`}
           onClick={onJoinWaitlist} 
           disabled={disabled}
         >
@@ -94,7 +94,7 @@ export default function IndexPage(){
         </div>
 
         <div className="bg-bgSecondary py-24 lg:py-44 px-5 sm:text-center">
-          <h1 className="text-base lg:text-7xl sm:text-6xl text-5xl text-secondary pb-8 leading-tight">
+          <h1 className="text-base lg:text-7xl sm:text-6xl text-5xl text-secondary pb-4 leading-tight">
             Making <br className="md:hidden block"/><span className="text-primary">open-source</span><br/> self-sustainable
           </h1>
           <p className="text-tertiary text-lg pb-8">Venlo tokenizes open-source work and creates dedicated marketplaces for it</p>
@@ -105,7 +105,7 @@ export default function IndexPage(){
           <h2 className="text-secondary text-3xl lg:text-4xl pb-4">
             Why?
           </h2>
-          <ul className="list-disc text-tertiary text-md md:text-lg pl-5">
+          <ul className="list-disc text-tertiary text-md pl-5">
             <li className="p-0.5">Open-source is the backbone of entire software industry, yet it's sustained only by the goodwill of the developers. It’s been going great so far, but we can do better.</li>
             <li className="p-0.5">There is little incentive for developers to work on open-source projects because of the lack of financial support. Therefore, progress in open-source projects is typically very slow.</li>
             <li className="p-0.5"><OpenInNew href="https://www.gnu.org/philosophy/free-sw.en.html">Free software</OpenInNew>is a right, not a good-to-have. Self-sustainability of open-source is necessary in order to align incentives for free software to become mainstream.</li>
@@ -118,7 +118,7 @@ export default function IndexPage(){
           <h2 className="text-secondary text-3xl lg:text-4xl pb-4">
             How?
           </h2>
-          <ul className="list-disc text-tertiary text-md md:text-lg pl-5">
+          <ul className="list-disc text-tertiary text-md pl-5">
             <li className="p-0.5">All repositories have a token of their own.</li>
             <li className="p-0.5">People buy the tokens and use them as offerings for getting their issues resolved within a certain time limit.</li>
             <li className="p-0.5">The offered tokens remain locked inside the issues until either the issues are resolved or the time limit is exceeded.</li>
@@ -133,7 +133,7 @@ export default function IndexPage(){
           <h2 className="text-secondary text-3xl lg:text-4xl pb-4">
             There's more to it...
           </h2>
-          <ul className="list-disc text-tertiary text-md md:text-lg pl-5">
+          <ul className="list-disc text-tertiary text-md pl-5">
             <li className="p-0.5">Anyone in the world with access to a computer and internet will be able to simply create a public software repository and have a token marketplace for their work. Software work will no longer have any gatekeeping, at all.</li>
             <li className="p-0.5">Large companies and organizations will have monetory incentives to free their code, allowing for more transpiracy and trust.</li>
             <li className="p-0.5">The non-profit open-source projects will finally be able to compete with their for-profit competitors.</li>
@@ -145,7 +145,7 @@ export default function IndexPage(){
           <h2 className="text-secondary text-3xl lg:text-4xl pb-4">
             Who's building it?
           </h2>
-          <p className="list-disc text-tertiary text-md md:text-lg">
+          <p className="list-disc text-tertiary text-md">
             Currently, <OpenInNew href="https://libkakashi.repl.co/">Apoorv</OpenInNew>is the only one working on Venlo. Though, Venlo is completely decentralized and owned by no one; it will be 100% open-source and entirely community managed right from the day 1 of launch.  
           </p>
         </div>
@@ -158,7 +158,7 @@ export default function IndexPage(){
         </div>
 
         <div className="bg-bgPrimary lg:px-52 md:px-24 px-8 lg:py-16 py-12 w-42" id="contact">  
-          <div className="text-secondary text-xl pb-6">
+          <div className="text-center text-secondary text-xl">
             Follow us on:
           </div>
           <SocialLinks className="imp:justify-start"/>

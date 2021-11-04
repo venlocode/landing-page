@@ -24,8 +24,8 @@ export default function ComingSoonPage(){
       <WaveBottom/>
 
       <div className="absolute top-1/2 left-1/2	transform -translate-y-1/2 -translate-x-1/2 text-center">
-        <h1 className="text-secondary text-6xl text-center text-white">Thank You!</h1>
-        <p className="text-tertiary text-lg pb-8">Your registration was successful. You can safely close this page.</p>
+        <h1 className="text-secondary text-7xl text-center font-bold text-white">Thank You!</h1>
+        <p className="text-tertiary text-lg pt-2 pb-8">Your registration was successful. You can safely close this page.</p>
         <Link href="/"><button className="bg-primary text-secondary text-xl py-2 px-8 rounded">Return Home</button></Link>
         <SocialLinks />
       </div>

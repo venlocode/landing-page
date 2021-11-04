@@ -1,13 +1,17 @@
 
-@font-face {
-  font-family: "FiraCode";
-  src: local("FiraCode"), url(./fonts/FiraCode/FiraCode-Regular.ttf) format("ttf");
-}
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: #121319;

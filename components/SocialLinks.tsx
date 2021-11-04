@@ -26,7 +26,7 @@ function SocialLinks({ className }: { className?: string }) {
   };
 
   return (
-    <div className={`flex space-x-5 justify-center ${className}`}>
+    <div className={`flex space-x-5 pt-12 justify-center ${className}`}>
       <a target="_blank" onClick={() => onClick("discord")} href="/discord"><DiscordMark/></a>
       <a target="_blank" onClick={() => onClick("github")} href="/github"><GithubMark /></a>
       <a target="_blank" onClick={() => onClick("twitter")} href="/twitter"><TwitterMark /></a>

@@ -38,14 +38,14 @@ export default async function(req, res){
   const doc = await get({ email });
   
   if(doc.exists && doc.data().verified){
-    return res.status(400).send({ error: "Email address already verified." });
+    return res.status(400).send({ error: "You have already registered for the waitlist." });
   }
   const token = makeToken(email);
   
   await Promise.all([
     transport.sendMail({
       from: "Venlo",
-      html: emailTemplate({ link: `http://localhost:3002/api/confirm?token=${encodeURIComponent(token)}` }),
+      html: emailTemplate({ link: `https://landing-page.apoorvsingal.repl.co/api/confirm?token=${encodeURIComponent(token)}` }),
       subject: "Please verify your email to join the waitlist",
       to: email,
     }),

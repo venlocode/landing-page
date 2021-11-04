@@ -24,7 +24,7 @@ export default function ComingSoonPage(){
       <WaveBottom/>
 
       <div className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-center">
-        <h1 className="text-secondary text-6xl text-center text-white">Coming Soon</h1>
+        <h1 className="text-secondary text-7xl pb-12 text-center font-bold text-white">Coming soon</h1>
         <Link href="/"><button className="bg-primary text-secondary text-xl py-2 px-8 rounded">Home</button></Link>
         <SocialLinks />
       </div>
