@@ -13,7 +13,7 @@ module.exports = {
       },
       {
         source: "/twitter",
-        destination: "/soon",
+        destination: "https://twitter.com/venlocode",
         permanent: true
       }
     ];
