@@ -7,7 +7,7 @@ const app = initializeApp({ credential: cert(serviceAccount) });
 const firestore = getFirestore(app);
 
 const add = ({ email }) => {
-  return firestore.collection("waitlist").doc(email).set({ verified: false });
+  return firestore.collection("waitlist").doc(email).set({ verified: false, createdAt: Date.now() });
 };
 
 const verify = ({ email }) => {

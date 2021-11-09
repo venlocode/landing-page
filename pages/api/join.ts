@@ -4,7 +4,7 @@ import { add, get } from "../../lib/db";
 
 const transport = nodeMailer.createTransport({
   host: process.env.EMAIL_HOST,
-  port: 587,
+  port: 465,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASSWORD
@@ -13,9 +13,7 @@ const transport = nodeMailer.createTransport({
 
 const emailTemplate = ({ link }) => (`
   <p>Hey, </p>
-  <p>Thanks for signing up for Venlo's waitlist. Please visit this link to confirm your email address: </p>
-  <p>${link}</p>
-
+  <p>Thanks for signing up for Venlo's waitlist. Please visit <a href="${link}">this link</a> to confirm your email address. </p>
   <p>
     Cheers,<br/>
     Venlo Team
@@ -44,8 +42,8 @@ export default async function(req, res){
   
   await Promise.all([
     transport.sendMail({
-      from: "Venlo",
-      html: emailTemplate({ link: `https://landing-page.apoorvsingal.repl.co/api/confirm?token=${encodeURIComponent(token)}` }),
+      from: "VenloCode <confirm@venlocode.com>",
+      html: emailTemplate({ link: `https://www.venlocode.com/api/confirm?token=${encodeURIComponent(token)}` }),
       subject: "Please verify your email to join the waitlist",
       to: email,
     }),
